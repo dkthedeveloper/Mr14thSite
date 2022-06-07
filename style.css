@@ -480,7 +480,7 @@ li::before {
     margin: 0;
   }
   #section-2 {
-    height: 100%;
+    height: 100vh;
   }
   #bio-2 {
     margin-left: 0;
