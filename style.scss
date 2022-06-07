@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@300&family=Nunito&family=Tiro+Devanagari+Hindi&display=swap');
+
+*   {
+    --main-heading-font: 'Bebas Neue', cursive;
+    --val-purple: rgb(141, 97, 171);
+    
+}
+
+body  {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.container   {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#section-1  {
+    background-image: url(./IMG-3468-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: var(--main-heading-font);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu   {
+    height: 5vh;
+    width: 100vw;
+    color: var(--val-purple);
+    font-family: var(--main-heading-font);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-shadow: -1px 5px 5px rgb(8, 8, 8);
+    font-size: 1.5rem;
+    opacity: 1;
+    animation-name: fade-in;
+    animation-duration: 4s;
+    //border-bottom: .2rem solid rgba(255, 255, 255, 0.882);
+
+}
+
+#menu:hover {
+    color: var(--val-purple);
+}
+
+@media only screen   
+and (min-width: 768px)   
+and (max-width: 2000px)   {
+    nav {
+        margin: 0;
+        padding: 0;
+        width: 10rem;
+        height: 2rem;
+        //border: .1rem double white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //background-color: linear-gradient(rgba(12, 6, 6, rgba(146, 144, 144, 0.773), 0.009));
+        
+    }
+}
+
+a   {
+    color: var(--val-purple);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white
+}
+
+a:visited   {
+    color: none;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+h1  {
+    margin: 0;
+    margin-left: 3rem;
+    font-size: 8rem;
+    letter-spacing: 1rem;
+    text-shadow: -2px 3px 3px rgb(8, 8, 8);
+    flex-wrap: wrap;
+    opacity: 1;
+    animation-name: fade-in;
+    animation-duration: 4s;
+    margin-top: 35vh;
+    margin-bottom: 40vh;
+    color: var(--val-purple);
+}
+
+h1:hover    {
+    color: white;
+    opacity: 0.5;
+}
+
+hr  {
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    margin-right: 0;
+}
+
+#section-2 {
+    
+    background-image: 
+    //linear-gradient(rgba(12, 6, 6, rgba(161, 155, 155, 0.009), 0.009)),
+    url(./images/XSS-1451.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    //margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+
+
+}
+
+#bio   {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 0;
+    padding-top: 0;
+    height: 88vh;
+    margin: 0;
+    max-height: max-content;
+}
+
+#menu-2 {
+    height: 5vh;
+    width: 100%;
+    color: var(--val-purple);
+    font-family: var(--main-heading-font);
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-shadow: -1px 5px 5px rgb(8, 8, 8);
+    font-size: 1.5rem;
+    opacity: 1;
+    animation-name: fade-in;
+    animation-duration: 4s;
+    border-bottom: .2rem solid rgba(255, 255, 255, 0.882);
+
+}
+
+#soundcloud-player  {
+    font-size: 10px; 
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+    font-weight: 100;
+    margin-right: 40rem;
+    margin-bottom: 30rem;
+
+}
+
+ul  {
+    color: white;
+    width: 30vw;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    //font-family: 'Tiro Devanagari Hindi', serif;
+    //font-family: 'Nunito', sans-serif;
+    //font-style: italic;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-shadow: -1px 3px 4px rgb(8, 8, 8);
+    list-style-type: none;
+    height: fit-content;
+    flex-shrink: 2;
+    opacity: 0.9;
+}
+
+li {
+    padding-left: 1em; 
+    text-indent: -.7em;
+  }
+  
+  li::before {
+    content: "• ";
+    color: var(--val-purple);
+    margin-right: .5rem;
+  }
+
+  /* Css for Mini Tablets & Mobile */
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+    /* some rules here */
+    #menu   {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2rem;
+        
+    }
+    
+    #menu-2   {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: none;
+        font-size: 1.2rem;
+        
+    }
+
+    #bio    {
+        height: 60vh;
+        padding: 0;
+    }
+
+    #section-2  {
+        margin: 0;
+        justify-content: space-evenly;
+        height: 100vh;
+    }
+
+    nav    {
+        
+        height: 1rem;
+        margin: .5rem;
+        padding: 0;
+        width: 8rem;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        margin-top: 25vh;
+        margin-bottom: 30vh;
+        font-size: 6rem;
+    }
+
+    #section-2  {
+        height: 100vh;
+    }
+
+    ul  {
+        font-size: 1rem;
+    }
+
+}
