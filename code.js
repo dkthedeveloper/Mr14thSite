@@ -30,6 +30,16 @@ bioArray2.map((e) => {
     bio2.append(listItem);
 });
 
+// https://stackoverflow.com/a/62936436
+const navbar = document.querySelector('nav');
+window.onscroll = () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('nav-colored');
+    } else {
+        navbar.classList.remove('nav-colored');
+    }
+};
+
 /*
 const myNav = document.querySelector('nav');
 window.onscroll = function () { 
