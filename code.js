@@ -29,3 +29,18 @@ bioArray2.map((e) => {
     listItem.innerHTML = `${e}<br><br>`;
     bio2.append(listItem);
 });
+
+/*
+const myNav = document.querySelector('nav');
+window.onscroll = function () { 
+    "use strict";
+    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    } 
+    else {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+    }
+};
+*/
